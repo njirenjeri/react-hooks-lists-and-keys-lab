@@ -1,12 +1,8 @@
 import React from "react";
 
-// import user from "../data/user";
 
 function ProjectItem({ name, about, technologies }) {
-
-  // const techCard = technologies.map((technology) => {
-  //   <span key = {technology}>{technology}</span>
-  // })
+  // console.log(technologies);
 
   return (
     <div className="project-item">
@@ -14,9 +10,9 @@ function ProjectItem({ name, about, technologies }) {
       <p>{about}</p>
       <div className="technologies">
         {/* render a <span> for each technology in the technologies array */}
-          {technologies.map((tech)=> {
+          {technologies.map((tech)=> 
             <span key={tech}>{tech}</span>
-          })}
+          )}
       </div>
     </div>
   );
